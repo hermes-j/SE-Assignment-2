@@ -1,0 +1,9 @@
+[HyungJun Lee] Tue May 20 02:23:33 2025 +0900 Diagram pdf파일 변환 e6c32ef
+[HyungJun Lee] Tue May 20 02:14:39 2025 +0900 Analysis Class Diagram 작성, Communication Diagram 수정 55faf6a
+[HyungJun Lee] Mon May 19 23:23:39 2025 +0900 Communication Diagram 6개 작성 37384a2
+[HyungJun Lee] Mon May 19 20:50:21 2025 +0900 각 UseCase Description에 '메뉴명 출력' Response 추가 23ca5b0
+[HyungJun Lee] Sun May 18 23:43:57 2025 +0900 Use Case Description 작성 3d3cff4
+[HyungJun Lee] Sun May 18 04:32:14 2025 +0900 Use Case Diagram 작성 e2205b5
+[HyungJun Lee] Sun May 18 04:23:44 2025 +0900 Requirement List 작성 f9c36b2
+[HyungJun Lee] Wed May 14 13:37:16 2025 +0900 과제2-1용 문서 생성, Add README.md 687755e
+[HyungJun Lee] Wed May 14 13:04:42 2025 +0900 Init - VisualStudio 프로젝트 생성 528d741
