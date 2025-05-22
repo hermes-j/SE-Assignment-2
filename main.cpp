@@ -134,10 +134,17 @@ void program_exit() {
 int main()
 {
 	ifstream readFile("input.txt");
+	ofstream output("output.txt");
+	streambuf* coutBuf = cout.rdbuf();
+	cout.rdbuf(output.rdbuf());
 	string line;
 	if (readFile.is_open()) {
 		while (getline(readFile, line)) {
 			if (!line.empty()) doTask(line);
 		}
 	}
+	cout.rdbuf(coutBuf);
+	readFile.close();
+	output.close();
+	return 0;
 }

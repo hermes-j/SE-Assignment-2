@@ -136,7 +136,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Member.cpp" />
     <ClCompile Include="MemberCollection.cpp" />
-    <ClCompile Include="RegisterControl.cpp" />
+    <ClCompile Include="SignupControl.cpp" />
     <ClCompile Include="Rental.cpp" />
     <ClCompile Include="RentalCollection.cpp" />
     <ClCompile Include="RentalInfoControl.cpp" />

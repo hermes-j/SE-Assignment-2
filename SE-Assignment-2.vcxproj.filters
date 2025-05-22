@@ -42,7 +42,7 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="RegisterControl.cpp">
+    <ClCompile Include="SignupControl.cpp">
       <Filter>소스 파일\Control</Filter>
     </ClCompile>
     <ClCompile Include="LoginControl.cpp">
