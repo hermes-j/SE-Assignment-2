@@ -1,15 +1,20 @@
-/*
-	Bike Entity Class
-*/
 #pragma once
 #include <string>
 using namespace std;
 
+/// <summary>
+/// Bike Entity Class
+/// </summary>
 class Bike {
 private:
-	int bikeID;
+	string bikeID;
 	string model;
+	bool isRented;
 public:
-	int getBikeID() { return bikeID; }
-	string getmodel() { return model; }
+	Bike(const string& bikeID, const string& model);
+	string getBikeID() const;
+	string getModel() const;
+	bool getIsRented() const;
+	void rent();
+	//void returnBike();
 };
