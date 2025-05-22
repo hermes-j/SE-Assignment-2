@@ -8,6 +8,7 @@
 /// <param name="bike">대여하는 자전거</param>
 void RentalCollection::addRental(const string& memberID, Bike* bike) {
 	rentals.push_back(new Rental(memberID, bike));
+	bike->rent();
 }
 
 /// <summary>
