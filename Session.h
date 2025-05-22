@@ -10,7 +10,7 @@ private:
 public:
 	Session();
 
-	void setCurrentUser(Member* user);
 	Member* getCurrentUser() const;
+	void setCurrentUser(Member* user);
 	void clearSession();
 };

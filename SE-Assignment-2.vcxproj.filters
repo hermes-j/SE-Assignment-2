@@ -16,13 +16,55 @@
     <Filter Include="헤더 파일\Entity">
       <UniqueIdentifier>{b52f0ccd-3fa9-48d9-a6d9-c31eb536316b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Control">
+      <UniqueIdentifier>{a826c6c7-6a5f-4111-9747-4b2404f6db68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity">
+      <UniqueIdentifier>{d3fe481e-1b28-4ad5-9ab0-c900be5b9971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Control">
+      <UniqueIdentifier>{3dc894fe-fb30-4fe2-b32a-374bcef9e322}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Bike.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Member.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Rental.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Member.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="RegisterControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutControl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBikeControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="RentBikeControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="RentalInfoControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="RentalCollection.cpp">
+      <Filter>소스 파일\Entity</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -32,10 +74,28 @@
     <ClInclude Include="Member.h">
       <Filter>헤더 파일\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="Rentals.h">
+    <ClInclude Include="Rental.h">
       <Filter>헤더 파일\Entity</Filter>
     </ClInclude>
     <ClInclude Include="Session.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="SignupControl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginControl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="AddBikeControl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="RentBikeControl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="RentalInfoControl.h">
+      <Filter>헤더 파일\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="RentalCollection.h">
       <Filter>헤더 파일\Entity</Filter>
     </ClInclude>
   </ItemGroup>

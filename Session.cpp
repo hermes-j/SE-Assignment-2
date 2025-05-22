@@ -1,8 +1,12 @@
 #include "Session.h"
 
+// 생성자
 Session::Session() : currentUser(nullptr) {}
 
-// 생성자
+/// <summary>
+/// set current user. 로그인용
+/// </summary>
+/// <param name="user"></param>
 void Session::setCurrentUser(Member* user) {
 	currentUser = user;
 }

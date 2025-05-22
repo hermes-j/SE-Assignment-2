@@ -1,4 +1,4 @@
-#include "Rentals.h"
+#include "Rental.h"
 #include <string>
 using namespace std;
 

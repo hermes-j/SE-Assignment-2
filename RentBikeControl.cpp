@@ -1,4 +1,6 @@
 #include "RentBikeControl.h"
+#include <iostream>
+using namespace std;
 
 /// <summary>
 /// 자전거 등록.
@@ -8,12 +10,13 @@
 /// <param name="bikeID"></param>
 void RentBikeControl::rentBike(const string& bikeID) {
 	Member* currentUser = session->getCurrentUser();
-	if (!currentUser) return; // 로그인 안함
+	if (!currentUser) return; // 로그인 해라
 	for (auto& bike : *bikeList) {
 		if (bike.getBikeID() == bikeID
 			&& !bike.getIsRented()) {
 			bike.rent();
-			rentalList->emplace_back(currentUser, &bike);
+			rentalCollection->addRental(currentUser->getID(), &bike);
+			cout << bike.getBikeID() << " " << bike.getModel() << "\n\n";
 			return;
 		}
 	}

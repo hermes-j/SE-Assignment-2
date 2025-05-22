@@ -7,6 +7,10 @@
 /// <param name="id">입력한 id</param>
 /// <param name="pw">입력한 pw</param>
 void LoginControl::login(const string& id, const string& pw) {
+	if (id == "admin" && pw == "admin") {
+		Member* admin = new Member("admin", "admin", "");
+		session->setCurrentUser(admin);
+	}
 	for (auto& member : *memberList) {
 		if (member.authenticate(id, pw)) {
 			session->setCurrentUser(&member);
