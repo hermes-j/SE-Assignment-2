@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClCompile Include="AddBikeControl.cpp" />
     <ClCompile Include="Bike.cpp" />
+    <ClCompile Include="BikeCollection.cpp" />
     <ClCompile Include="LoginControl.cpp" />
     <ClCompile Include="LogoutControl.cpp" />
     <ClCompile Include="LogoutControl.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Member.cpp" />
+    <ClCompile Include="MemberCollection.cpp" />
     <ClCompile Include="RegisterControl.cpp" />
     <ClCompile Include="Rental.cpp" />
     <ClCompile Include="RentalCollection.cpp" />
@@ -144,8 +146,10 @@
   <ItemGroup>
     <ClInclude Include="AddBikeControl.h" />
     <ClInclude Include="Bike.h" />
+    <ClInclude Include="BikeCollection.h" />
     <ClInclude Include="LoginControl.h" />
     <ClInclude Include="Member.h" />
+    <ClInclude Include="MemberCollection.h" />
     <ClInclude Include="RentalCollection.h" />
     <ClInclude Include="SignupControl.h" />
     <ClInclude Include="RentalInfoControl.h" />

@@ -1,5 +1,5 @@
 #pragma once
-#include "Member.h"
+#include "MemberCollection.h"
 #include "Session.h"
 #include <vector>
 
@@ -8,10 +8,10 @@
 /// </summary>
 class LoginControl {
 private:
-	vector<Member>* memberList;
+	MemberCollection* memberCollection;
 	Session* session;
 public:
-	LoginControl(vector<Member>* memberList, Session* session)
-		: memberList(memberList), session(session) {}
+	LoginControl(MemberCollection* memberCollection, Session* session)
+		: memberCollection(memberCollection), session(session) {}
 	void login(const string& id, const string& pw);
 };

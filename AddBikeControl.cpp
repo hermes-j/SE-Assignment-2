@@ -6,5 +6,5 @@
 /// <param name="bikeID">입력된 자전거 id</param>
 /// <param name="model">입력된 자전거 모델명</param>
 void AddBikeControl::AddBike(const string& bikeID, const string& model) {
-	bikeList->emplace_back(bikeID, model);
+	bikeCollection->addBike(new Bike(bikeID, model));
 }

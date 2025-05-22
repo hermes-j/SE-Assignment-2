@@ -7,10 +7,10 @@
 #include <vector>
 #include <string>
 
-#include "Member.h"
+#include "MemberCollection.h"
 #include "Session.h"
-#include "Bike.h"
-#include "Rental.h"
+#include "BikeCollection.h"
+#include "RentalCollection.h"
 
 #include "SignupControl.h"
 #include "LoginControl.h"
@@ -24,8 +24,8 @@ void doTask(const string &str);
 void program_exit();
 
 Session session;
-vector<Member> memberList;
-vector<Bike> bikeList;
+MemberCollection memberCollection;
+BikeCollection bikeCollection;
 RentalCollection rentalCollection;
 
 /// <summary>
@@ -55,7 +55,7 @@ void doTask(const string &str) {
 			// 비밀번호 등이 포함된 기능상 사용자가 입력하는 정보에 대한 출력은 
 			// Signup operation 내에서 출력하면 안 된다고 판단.
 			cout << params[0] << " " << params[1] << " " << params[2] << "\n\n";
-			SignupControl SUCtrl(&memberList);
+			SignupControl SUCtrl(&memberCollection);
 			SUCtrl.Signup(params[0], params[1], params[2]);
 			break;
 		}
@@ -66,7 +66,7 @@ void doTask(const string &str) {
 		case 1: { // 로그인
 			cout << "2.1. 로그인" << endl << "> ";
 			cout << params[0] << " " << params[1] << "\n\n";
-			LoginControl LICtrl(&memberList, &session);
+			LoginControl LICtrl(&memberCollection, &session);
 			LICtrl.login(params[0], params[1]); // session에 정보 저장됨
 			break;
 		}
@@ -83,7 +83,7 @@ void doTask(const string &str) {
 		case 1: { // 자전거 등록
 			cout << "3.1. 자전거 등록" << endl << "> ";
 			cout << params[0] << " " << params[1] << "\n\n";
-			AddBikeControl ABCtrl(&bikeList);
+			AddBikeControl ABCtrl(&bikeCollection);
 			ABCtrl.AddBike(params[0], params[1]);
 			break;
 		}
@@ -93,7 +93,7 @@ void doTask(const string &str) {
 		switch (menu_level_2) {
 		case 1: { // 자전거 대여
 			cout << "4.1. 자전거 대여" << endl << "> ";
-			RentBikeControl RBCtrl(&bikeList, &rentalCollection, &session);
+			RentBikeControl RBCtrl(&bikeCollection, &rentalCollection, &session);
 			RBCtrl.rentBike(params[0]);
 			break;
 		}

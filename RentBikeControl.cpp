@@ -11,13 +11,12 @@ using namespace std;
 void RentBikeControl::rentBike(const string& bikeID) {
 	Member* currentUser = session->getCurrentUser();
 	if (!currentUser) return; // 로그인 해라
-	for (auto& bike : *bikeList) {
-		if (bike.getBikeID() == bikeID
-			&& !bike.getIsRented()) {
-			bike.rent();
-			rentalCollection->addRental(currentUser->getID(), &bike);
-			cout << bike.getBikeID() << " " << bike.getModel() << "\n\n";
-			return;
-		}
+	
+	Bike* bike = bikeCollection->findBikeByID(bikeID);
+	if (bike && !bike->getIsRented()) {
+		bike->rent();
+		rentalCollection->addRental(currentUser->getID(), bike);
+		cout << bike->getBikeID() << " " << bike->getModel() << "\n\n";
+		return;
 	}
 }

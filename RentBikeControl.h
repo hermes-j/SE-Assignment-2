@@ -1,5 +1,5 @@
 #pragma once
-#include "Bike.h"
+#include "BikeCollection.h"
 #include "RentalCollection.h"
 #include "Session.h"
 #include <vector>
@@ -9,11 +9,11 @@
 /// </summary>
 class RentBikeControl {
 private:
-	vector<Bike>* bikeList;
+	BikeCollection* bikeCollection;
 	RentalCollection* rentalCollection;
 	Session* session;
 public:
-	RentBikeControl(vector<Bike>* bikeList, RentalCollection* rentalCollection, Session* session) 
-		: bikeList(bikeList), rentalCollection(rentalCollection), session(session) {}
+	RentBikeControl(BikeCollection* bikeCollection, RentalCollection* rentalCollection, Session* session) 
+		: bikeCollection(bikeCollection), rentalCollection(rentalCollection), session(session) {}
 	void rentBike(const string& bikeID);
 };

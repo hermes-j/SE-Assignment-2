@@ -10,11 +10,12 @@ void LoginControl::login(const string& id, const string& pw) {
 	if (id == "admin" && pw == "admin") {
 		Member* admin = new Member("admin", "admin", "");
 		session->setCurrentUser(admin);
+		return;
 	}
-	for (auto& member : *memberList) {
-		if (member.authenticate(id, pw)) {
-			session->setCurrentUser(&member);
-			return;
-		}
+	Member* member = memberCollection->findByID(id);
+	if (member->authenticate(id, pw)) {
+		session->setCurrentUser(member);
+		return;
 	}
+	return;
 }

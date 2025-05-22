@@ -7,5 +7,5 @@
 /// <param name="pw">입력된 비밀번호</param>
 /// <param name="phone">입력된 전화번호</param>
 void SignupControl::Signup(const string& id, const string& pw, const string& phone) {
-	memberList->emplace_back(id, pw, phone);
+	memberCollection->addMember(new Member(id, pw, phone));
 }

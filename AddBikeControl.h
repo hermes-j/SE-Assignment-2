@@ -1,5 +1,5 @@
 #pragma once
-#include "Bike.h"
+#include "BikeCollection.h"
 #include <vector>
 
 /// <summary>
@@ -7,8 +7,8 @@
 /// </summary>
 class AddBikeControl {
 private:
-	vector<Bike>* bikeList;
+	BikeCollection* bikeCollection;
 public:
-	AddBikeControl(vector<Bike>* bikeList) : bikeList(bikeList) {}
+	AddBikeControl(BikeCollection* bikeCollection) : bikeCollection(bikeCollection) {}
 	void AddBike(const string& bikeID, const string& model);
 };

@@ -1,6 +1,10 @@
 #pragma once
 #include <vector>
 #include "Rental.h"
+
+/// <summary>
+/// Rental Collection Class
+/// </summary>
 class RentalCollection {
 private:
 	vector<Rental*> rentals;
