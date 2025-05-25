@@ -72,6 +72,9 @@
     <ClCompile Include="MemberCollection.cpp">
       <Filter>소스 파일\Entity</Filter>
     </ClCompile>
+    <ClCompile Include="ExitControl.cpp">
+      <Filter>소스 파일\Control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bike.h">
@@ -109,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="MemberCollection.h">
       <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitControl.h">
+      <Filter>헤더 파일\Control</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

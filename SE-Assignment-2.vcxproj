@@ -130,6 +130,7 @@
     <ClCompile Include="AddBikeControl.cpp" />
     <ClCompile Include="Bike.cpp" />
     <ClCompile Include="BikeCollection.cpp" />
+    <ClCompile Include="ExitControl.cpp" />
     <ClCompile Include="LoginControl.cpp" />
     <ClCompile Include="LogoutControl.cpp" />
     <ClCompile Include="LogoutControl.h" />
@@ -147,6 +148,7 @@
     <ClInclude Include="AddBikeControl.h" />
     <ClInclude Include="Bike.h" />
     <ClInclude Include="BikeCollection.h" />
+    <ClInclude Include="ExitControl.h" />
     <ClInclude Include="LoginControl.h" />
     <ClInclude Include="Member.h" />
     <ClInclude Include="MemberCollection.h" />

@@ -18,10 +18,10 @@
 #include "AddBikeControl.h"
 #include "RentBikeControl.h"
 #include "RentalInfoControl.h"
+#include "ExitControl.h"
 using namespace std;
 
 void doTask(const string &str);
-void program_exit();
 
 Session session;
 MemberCollection memberCollection;
@@ -112,19 +112,12 @@ void doTask(const string &str) {
 	case 6:
 		switch (menu_level_2) {
 		case 1: { // 프로그램 종료
-			program_exit();
+			ExitControl ExCtrl;
+			ExCtrl.program_exit();
 			break;
 		}}
 		break;
 	}
-}
-
-/// <summary>
-/// 프로그램 종료
-/// </summary>
-void program_exit() {
-	cout << "6.1. 종료" << endl;
-	exit(0);
 }
 
 /// <summary>
